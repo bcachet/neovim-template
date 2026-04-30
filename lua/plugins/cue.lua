@@ -1,9 +1,9 @@
 return {
   {
-    "mason-org/mason.nvim",
+    "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "puppet-editor-services",
+        "cue",
       },
     },
   },
