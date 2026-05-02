@@ -1,9 +1,19 @@
 return {
   {
-    "mason-org/mason.nvim",
+    "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "puppet-editor-services",
+        "puppet",
+      },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    lazy = true,
+    ft = { "puppet" },
+    opts = {
+      servers = {
+        puppet = { enabled = true },
       },
     },
   },
