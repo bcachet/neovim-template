@@ -18,5 +18,8 @@ return {
     opts = {
       home = vim.fn.expand("~/Documents/Notes/"),
     },
+    keys = {
+      { "<leader>z", "<cmd>Telekasten panel<CR>", desc = "Telekasten panel", mode = { "n" } },
+    },
   },
 }
