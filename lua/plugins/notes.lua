@@ -12,8 +12,8 @@ return {
     "renerocksai/telekasten.nvim",
     dependencies = {
       "nvim-telescope/telescope.nvim",
-      "telescope-media-files.nvim",
-      "calendar-vim",
+      "nvim-telescope/telescope-media-files.nvim",
+      "mattn/calendar-vim
     },
     opts = {
       home = vim.fn.expand("~/Documents/Notes/"),
