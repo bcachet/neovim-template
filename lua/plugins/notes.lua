@@ -13,7 +13,7 @@ return {
     dependencies = {
       "nvim-telescope/telescope.nvim",
       "nvim-telescope/telescope-media-files.nvim",
-      "mattn/calendar-vim
+      "mattn/calendar-vim",
     },
     opts = {
       home = vim.fn.expand("~/Documents/Notes/"),
