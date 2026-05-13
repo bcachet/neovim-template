@@ -8,9 +8,9 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 --
 vim.api.nvim_create_autocmd({"FileType"}, {
-  pattern = { "cue" },
+  pattern = { "clojure" },
   callback = function()
-    vim.b.autoformat = true
+    vim.b.autoformat = false
   end
 })
 
