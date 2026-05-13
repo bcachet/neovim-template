@@ -11,8 +11,9 @@ vim.opt.tabstop = 2 -- Tab width
 vim.opt.ignorecase = true -- Ignore case in search
 vim.opt.smartcase = true -- Case sensitive if uppercase used
 vim.opt.listchars = {
-  tab = "» ",
-  trail = "·",
-  nbsp = "␣",
   extends = "…",
+  eol = "⏎",
+  tab = "␉·",
+  trail = "␠",
+  nbsp = "⎵",
 }
