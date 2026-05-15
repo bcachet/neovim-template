@@ -23,6 +23,9 @@ return {
       behaviour = {
         auto_set_keymaps = false,
       },
+      web_search = {
+        provider = "kagi",
+      },
     },
   },
   {
