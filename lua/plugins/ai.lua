@@ -17,6 +17,27 @@ return {
           args = { "acp" },
         },
       },
+      selection = {
+        hint_display = "none",
+      },
+      behaviour = {
+        auto_set_keymaps = false,
+      },
+    },
+  },
+  {
+    "render-markdown.nvim",
+    opts = {
+      file_types = { "markdown", "Avante" },
+    },
+  },
+  {
+    "blink.cmp",
+    opts = {
+      sources = {
+        default = { "avante" },
+        providers = { avante = { module = "blink-cmp-avante", name = "Avante" } },
+      },
     },
   },
 }
