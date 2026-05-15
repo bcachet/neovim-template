@@ -2,12 +2,19 @@ return {
   {
     "avante.nvim",
     opts = {
-      {
-        acp_providers = {
-          ["opencode"] = {
-            command = "opencode",
-            args = { "acp" },
-          },
+      provider = "openrouter",
+      providers = {
+        openrouter = {
+          __inherited_from = "openai",
+          endpoint = "https://openrouter.ai/api/v1",
+          api_key_name = "OPENROUTER_API_KEY",
+          model = "mistralai/devstral-2512",
+        },
+      },
+      acp_providers = {
+        ["opencode"] = {
+          command = "opencode",
+          args = { "acp" },
         },
       },
     },
