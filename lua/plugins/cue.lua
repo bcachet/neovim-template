@@ -27,4 +27,16 @@ return {
       },
     },
   },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters = {
+        cue_fmt = {
+          command = "cue",
+          args = { "fmt", "-" },
+          stdin = true,
+        },
+      },
+    },
+  },
 }
