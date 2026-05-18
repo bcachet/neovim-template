@@ -22,6 +22,7 @@ return {
           root_dir = function(fname)
             return util.root_pattern("cue.mod", ".git")(fname)
           end,
+          single_file_support = true,
         } or {},
       },
     },
