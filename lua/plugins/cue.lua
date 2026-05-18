@@ -1,3 +1,5 @@
+local util = require("lspconfig.util")
+
 return {
   {
     "nvim-treesitter/nvim-treesitter",
@@ -13,7 +15,14 @@ return {
     ft = { "cue" },
     opts = {
       servers = {
-        dagger = { enabled = true },
+        -- dagger = { enabled = true },
+        cue = vim.fn.executable("cue") == 1 and {
+          cmd = { "cue", "lsp", "serve" },
+          filetypes = { "cue" },
+          root_dir = function(fname)
+            return util.root_pattern("cue.mod", ".git")(fname)
+          end,
+        } or {},
       },
     },
   },
