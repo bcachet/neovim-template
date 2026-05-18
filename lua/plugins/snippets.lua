@@ -2,10 +2,7 @@
 return {
   {
     "L3MON4D3/LuaSnip",
-    optional = true,
-    opts = function(_, opts)
-      opts.enable_autosnippets = false
-    end,
+    enabled = false,
   },
 
   {
